@@ -6,8 +6,8 @@ import './styles/cartWidget.css'
 function CartWidget(){
     return(
         <div className="cartContainer">
-        <p className="cartNumber">5</p>
-        <FaShoppingCart className="cartIcon"/>
+            <p className="cartNumber">5</p>
+            <FaShoppingCart className="cartIcon"/>
         </div>
     )
 }
