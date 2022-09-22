@@ -1,16 +1,17 @@
 .cartIcon{
-    color: #666;
+    color: #ddd;
     font-size: 40px;
 }
 
 .cartContainer:hover{
     cursor: pointer;
+    filter:drop-shadow(0px 0px 5px #fff)
     
 }
 
 .cartNumber{
     padding-top: 7px;
-    color:#666;
+    color:#ddd;
     text-align: center;
     font-size: 20px;
     font-weight: 900;

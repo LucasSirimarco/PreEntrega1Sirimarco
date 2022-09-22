@@ -8,7 +8,7 @@ function Navbar() {
         <div className='navContainer'>
             <nav className='nav'>
                 <div className='title'>
-                  <h3 className='titlePri'>MusicShop</h3> 
+                  <h3 className='titlePri'>ArpeggioShop</h3> 
                   <h5 className='titleSeg'>Instrumentos Musicales</h5>
                 </div>
                 <ul className='list'>
