@@ -1,0 +1,7 @@
+.countContainer{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
