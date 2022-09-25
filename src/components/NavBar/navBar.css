@@ -19,7 +19,7 @@
     grid-template-columns: 1fr 4fr 1fr;
     height: 70px;
     padding: 5px 15px 5px 15px;
-    
+    user-select: none;
 }
 
 .title{
@@ -53,6 +53,7 @@
     list-style: none;
     grid-area: list;
     margin: auto;
+  
 }
 
 .listElement:hover{
