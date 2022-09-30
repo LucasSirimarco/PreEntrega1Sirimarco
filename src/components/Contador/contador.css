@@ -3,5 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 50px auto auto auto ;
     width: 20%;
+}
+
+.imgItem{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
 }
