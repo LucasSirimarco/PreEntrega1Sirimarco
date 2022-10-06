@@ -15,9 +15,10 @@ function Navbar() {
                 </div>
                 </Link>
                 <ul className='list'>
-                    <li className='listElement'><Link to='/category'>Categorias</Link></li>
-                    <li className='listElement'><Link to='/item'>Items</Link></li>
-                    <li className='listElement'><Link>Contacto</Link></li>
+                    <li className='listElement'><Link to='/category/guitars'>Guitarras</Link></li>
+                    <li className='listElement'><Link to='/category/bass'>Bajos</Link></li>
+                    <li className='listElement'><Link to='/category/drums'>Baterias</Link></li>
+                    <li className='listElement'><Link to='/category/keyboards'>Teclados</Link></li>
                 </ul>
                 <Link to='/cart'>
                     <CartWidget className="ico"/>

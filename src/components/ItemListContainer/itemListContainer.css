@@ -3,7 +3,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 500px;
     font-weight: 600;
     font-size: 25px;
+    padding: 30px;
+    margin: auto;
+}
+
+.cargando{
+    color: beige;
+    font-size: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.titulo {
+    color: beige;
+    font-size: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }

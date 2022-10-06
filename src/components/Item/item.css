@@ -1,0 +1,25 @@
+.imagen{
+    width: 100px;
+    height: 100px;
+}
+
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border: solid #333 2px;
+    border-radius: 5px;
+    padding: 30px;
+    width: 300px;
+    margin: 10px;
+}
+
+.verDetalle{
+    color: #666;
+    font-weight: 900;
+}
+.verDetalle:hover{
+    color: #222;
+}

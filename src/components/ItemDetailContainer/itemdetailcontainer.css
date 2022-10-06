@@ -1,0 +1,14 @@
+.detalleConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 215, 215);
+    border: 2px solid #333;
+    border-radius: 20px;
+    width: 40%;
+    margin: auto;
+}
+.imgProduct{
+    width: 200px;
+}
