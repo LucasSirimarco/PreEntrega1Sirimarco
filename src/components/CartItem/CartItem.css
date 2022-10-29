@@ -1,0 +1,79 @@
+.divContainerCart {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 50px;
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    margin: 30px;
+    font-size: 15px;
+    background-color: papayawhip;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+}
+
+.InfoCartItem {
+    margin-right: 50px;
+}
+
+.HeaderCartItem{ 
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+.Cantidad{
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+.ContainerItemCartItem {
+    display: flex;
+   align-items: center;
+    width: 20%;
+}
+.ItemFooterCartItem {
+    display: flex;
+    width: 25%;
+    align-items: center;
+}
+.ItemOut{
+    display: flex;
+    width: 5%;
+    align-items: center;
+}
+
+.ItemHeaderCartItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.InfoCartItem {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ButtonCartItem {
+    width: auto;
+    padding: 16px;
+    font-size: 12px;
+    background: #30f5db;
+    border-radius: 8px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #003a3a;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+}
+.ButtonCartItem:hover{
+    background: #f5b030;
+}

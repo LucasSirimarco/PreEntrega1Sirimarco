@@ -1,11 +1,17 @@
 .countContainer{
-    background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 50px auto auto auto ;
-    width: 20%;
+
+
+}
+.countItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .imgItem{
@@ -13,4 +19,40 @@
     height: 100px;
     background-color: rgb(0, 0, 0);
     opacity: 0.5;
+}
+.buttons{
+    width: 30px;
+    height: 30px;
+}
+.agregar{
+    width: 120px;
+    height: 50px;
+    background: rgb(204, 255, 204);
+    color: rgb(45, 49, 38);
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.agregar:hover{
+    color: rgb(23, 40, 54);
+    background-color: rgb(148, 195, 236);
+    cursor: pointer;
+}
+.valor{
+    position: relative;
+    top: 3px;
+    text-align: center;
+}
+.textoBoton{
+    font-size: 15px;
+    font-weight: 900;
+    border: none;
+    background:rgb(255, 182, 182) ;
+    border-radius: 5px;
+}
+.textoBoton:hover{
+    background-color: rgb(148, 195, 236);
+    border: none;
+    cursor: pointer;
 }

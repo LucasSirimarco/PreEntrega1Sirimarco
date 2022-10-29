@@ -1,0 +1,99 @@
+.divContainerCheckout{
+        width: 350px;
+        height: auto;
+        padding: 20px;
+        margin: auto;
+        font-size: 15px;
+        background-color: papayawhip;
+        border: 1px solid #e1e1e1;
+        border-radius: 10px;
+}
+
+.fromCheckout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.inputForm{
+    width: 100%;
+    border: none;
+    background: aliceblue;
+    height: 30px;
+    border-radius: 10px;
+}
+.inputForm:hover{
+    background: rgb(199, 199, 199);
+}
+.inputForm:focus {
+    outline: solid 1px #999;
+}
+.labelForm{
+    width: 80%;
+    font-size: 20px;
+    color: #444;
+}
+
+.compra{
+    background: rgb(149, 255, 241);
+    color: #444;
+    font-size: 15px;
+    font-weight: 600;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    margin: 15px auto;
+}
+.compra:hover{
+    background: rgb(253, 255, 142);
+    cursor: pointer;
+}
+
+.volverAlCart{
+    background: rgb(255, 149, 250);
+    color: #444;
+    font-size: 15px;
+    font-weight: 600;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    margin: 15px auto;
+}
+.volverAlCart:hover{
+    background: rgb(253, 255, 142);
+    cursor: pointer;
+}
+
+.navegacionCheckout{
+    display: flex;
+    flex-direction: row;
+}
+
+.recibirTiket{
+    background: rgb(167, 255, 149);
+    color: #444;
+    font-size: 15px;
+    font-weight: 600;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    margin: 15px auto;
+}
+.recibirTiket:hover{
+    background: rgb(253, 255, 142);
+    cursor: pointer;
+}

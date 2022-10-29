@@ -1,0 +1,41 @@
+.imagen{
+    width: 300px;
+    height: 300px;
+}
+
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border: solid #333 2px;
+    border-radius: 5px;
+    padding: 30px;
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+}
+
+.verDetalle{
+    color: #666;
+    font-weight: 900;
+}
+.verDetalle:hover{
+    color: #222;
+}
+.Finalizacion{
+    background: rgb(184, 248, 171);
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Finalizacion:hover{
+    background: rgb(171, 224, 248);
+}

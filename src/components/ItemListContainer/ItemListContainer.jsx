@@ -1,37 +1,43 @@
-import React from "react";
 import './itemListContainer.css'
-import { useState, useEffect } from 'react'
-import { getProducts } from '../../async-mocks'
 import ItemList from '../ItemList/ItemList'
+import { useState, useEffect, useContext } from 'react'
 import { useParams } from "react-router-dom";
+import { getDocs, collection, query, where } from 'firebase/firestore'
+import { db } from '../../services/firebase'
+import { NotificationContext } from '../../Notification/Notification'
 
-
-function ItemListContainer() {
-
+const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([]);
     const [cargando, setCargando] = useState(true)
     const { categoryId } = useParams()
+    const { setNotification } = useContext(NotificationContext)
 
-
-    useEffect(()=>{
+    useEffect( () => {
         setCargando(true)
-        getProducts(categoryId).then(productos =>{
-            setProducts(productos)
-        }).finally(()=>{
-            setCargando(false)
-        })
-    },[categoryId])
+        const collectionRef = categoryId 
+                ? query(collection(db, 'products'), where('category', '==', categoryId))
+                : collection(db, 'products')
+        getDocs(collectionRef).then(response => {
+            console.log(response)
+            const productsAdapted = response.docs.map(doc => {
+                const data = doc.data()
+                return { id: doc.id, ...data}
+            })
+            setProducts(productsAdapted)})
+        .catch(error => {
+            setNotification('error', 'No se pueden obtener los productos')})
+        .finally(() => {
+            setCargando(false)})  
+    }, [categoryId])
 
-    console.log(products);
-
-    if (cargando) {
-        return <h2 className="cargando">Cargando...</h2>
+    if(cargando && true) {
+        return <h1 className='titulo'>Cargando productos...</h1>
     }
 
     return (
         <div>
-        <h1 className="titulo">Productos</h1>
-        <ItemList products = {products}/>
+            <h1 className='titulo'>{`${greeting} ${categoryId || ''}`}</h1>
+            <ItemList products={products} />
         </div>
     )
 }
